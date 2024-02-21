@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-size: 62.5%;
+}
+.wrapper{ 
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(90deg, rgba(23, 114, 187, 1) 0%, rgba(98, 217, 243, 1) 100%);
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3rem;
+    margin-bottom: 2rem;
+
+}
+.tabs{
+  
+    display: flex;
+    justify-content: center;
+   max-width: 50rem;
+   justify-content: space-between;
+   margin: 0 auto;
+   margin-top: 4rem;
+  
+
+}
+.tab{
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+
+
+.tab.currenttabprop{
+    background-color: rgba(219, 226, 239,0.5);
+    border-radius: 0.4rem;
+    
+}
+.weathercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 4rem;
+}
+.grantbutton{
+ all: unset;
+   color: white;
+   background-color: rgb(49, 135, 228);
+   border-radius: 0.5rem;
+   text-transform: uppercase;
+   padding: 1rem 3rem;
+   font-size: 1.5rem;
+   cursor: pointer;
+ 
+}
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.grantaccess img{
+    margin-bottom: 2rem;
+}
+.grantaccess p:first-of-type{
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+.grantaccess p:last-of-type{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+
+
+}
+.grantaccess{
+    display: none;
+}
+.grantaccess.active{
+    display: flex;
+} 
+
+
+ .loading{
+ display: none;
+}  
+.loading.active{
+    display: flex;
+}
+.loading p{
+    text-transform: uppercase;
+    font-size: 3rem;
+ 
+}
+
+
+.userinfocontainer{
+  display: none;
+    margin-top: 5rem;
+}
+.userinfocontainer.active{
+    display: flex;
+}
+.name{
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+    margin-bottom: 2rem;
+   
+}
+
+#np{
+    font-size: 4rem;
+}
+.name img{
+    width: 3.5rem;
+    height: 3rem;
+}
+#wi{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+#image{
+    width: 9rem;
+    height: 9rem;
+}
+.userinfocontainer p[data-temp]{
+    font-size: 3rem;
+    font-weight:700;
+}
+.parameter{
+    margin-top: 2rem;
+    display: flex;
+ gap: 2rem;
+}
+.parameter p{
+    font-size: 1.8rem;
+}
+.para1{
+    height: 12rem;
+    width: 13rem;
+    text-transform: uppercase;
+    background-color:rgba(219, 226, 239,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.para1 img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.search{
+    display: none;
+}
+
+.search.active{
+    display: flex;
+}
+.search{
+    justify-content: space-between;
+    gap: 1rem;
+      width: 40rem;
+      height: 3rem;
+      border-radius: 1rem;  
+   
+}
+.search.active{
+      display: flex;
+ }
+.searchengine{
+   all: unset;
+   width: 100%;
+   border-radius: 1rem;  
+   background-color:  rgba(219, 226, 239,0.5);
+   color:white;
+   font-size: 2rem;
+   padding-left:3rem;
+   border: 0.2rem solid white;
+  
+  
+  }
+  .searchengine::placeholder{
+      color: white;
+      
+  }
+  #butt{
+   all: unset;
+   width: 3.1rem;
+   border-radius: 1rem;
+   background-color:  rgb(99, 166, 239);
+   border :0.2rem solid white;
+   cursor: pointer;
+  
+  }
+  .sear{
+      width: 2.1rem;
+      height: 2.1rem;
+      margin-left: 0.3rem;
+  }
+  #error{
+    display: none;
+  }
+  #error.active{
+    display: flex;
+  }
+  @media(max-width:700px){
+    html{
+    font-size: 50%;
+    }
+}  
+@media(max-width:800px){
+   .wrapper{
+    padding-top: 80px;
+   }
+}
+@media(max-width:400px){
+    html{
+    font-size: 40%;
+}  
+}
